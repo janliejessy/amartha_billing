@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  mysql-test:
+    container_name: mysql-test
+    image: mysql:8.1
+    environment:
+      MYSQL_DATABASE: amartha-db
+      MYSQL_ROOT_PASSWORD: amartha
+      MYSQL_USER: amartha
+      MYSQL_PASSWORD: amartha
+    ports:
+      - 3306:3306
