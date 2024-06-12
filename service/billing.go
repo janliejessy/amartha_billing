@@ -123,7 +123,6 @@ func getCurrentInstallmentWeek(loanDetails model.Loan) float64 {
 		return float64(loanDetails.Installment)
 	}
 
-	fmt.Printf("\ntimelapse: %f\n", curWeek)
 	return curWeek
 }
 
